@@ -220,3 +220,6 @@ pip-log.txt
 .RData
 .Rhistory
 
+.Rproj.user
+mmgenome.Rproj
+test/
