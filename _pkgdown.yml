@@ -1,0 +1,10 @@
+url: https://github.com/MadsAlbertsen/mmgenome
+
+home:
+  links:
+    - text: Latest stable release
+      href: https://github.com/MadsAlbertsen/mmgenome/releases/latest/
+
+template:
+  params:
+    bootswatch: yeti
