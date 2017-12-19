@@ -5,7 +5,7 @@ sudo: false
 r: bioc-devel
 warnings_are_errors: false
 notifications:
+    on_success: change
+    on_failure: change
     email: false
     slack: eb-group-aau:mpu4RiEUcNG66eF0OefApi5d
-        on_success: change
-        on_failure: change
