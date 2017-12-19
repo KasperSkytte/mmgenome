@@ -25,7 +25,6 @@ Extracts scaffolds that are connected by paired-end or mate-pair reads.
 }
 \examples{
 
-\dontrun{
 data(rocco)
 
 p <- mmplot(data = d, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "phylum", minlength = 3000)
@@ -41,7 +40,7 @@ dB <- mmextract_network(subset = dA, original = d, network = pe, nconnections = 
 mmplot(data = dB, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "phylum", minlength = 3000)
 mmplot_network(data = dB, network = pe, color = "phylum", nconnections = 10) 
 
-}
+
 }
 \author{
 Soren M. Karst \email{smk@bio.aau.dk}

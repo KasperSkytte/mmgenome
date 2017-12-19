@@ -18,7 +18,6 @@
 #' 
 #' @examples
 #' 
-#' \dontrun{
 #' data(rocco)
 #' 
 #' p <- mmplot(data = d, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "phylum", minlength = 3000)
@@ -34,7 +33,7 @@
 #' mmplot(data = dB, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "phylum", minlength = 3000)
 #' mmplot_network(data = dB, network = pe, color = "phylum", nconnections = 10) 
 #' 
-#' }
+#' 
 
 mmextract_network <- function(subset, network, original = d, nconnections = 2, type = "direct"){
   
