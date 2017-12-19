@@ -52,18 +52,26 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../index.html">Home</a>
 </li>
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../articles/mmgenome.html">Get started</a>
+</li>
+<li>
+  <a href="../reference/index.html">Functions</a>
+</li>
+<li>
+  <a href="../articles/assembly.html">Assembly guides</a>
 </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a>
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -77,7 +85,7 @@
     <div class="page-header">
       <h1>
         Reference
-        <small>version&nbsp;0.7.1</small>
+        <small>version&nbsp;1.0</small>
       </h1>
     </div>
 
@@ -92,34 +100,22 @@
       <tbody>
         <tr>
           <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
+            <h2 id="section-data-and-filtering" class="hasAnchor"><a href="#section-data-and-filtering" class="anchor"></a>Data and filtering</h2>
+            <p class="section-desc"><p>Functions for loading, exporting and subsetting the data.</p></p>
           </th>
         </tr>
         <tr>
           <!--  -->
           <td>
-            <p><code><a href="mmadd.html">mmadd</a></code> </p>
+            <p><code><a href="mmload.html">mmload</a></code> </p>
           </td>
-          <td><p>Add data to any mmgenome object</p></td>
+          <td><p>Data loading function</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmexport.html">mmexport</a></code> </p>
+            <p><code><a href="mmimport.html">mmimport</a></code> </p>
           </td>
-          <td><p>Exports scaffolds in fasta format</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mmextract_network.html">mmextract_network</a></code> </p>
-          </td>
-          <td><p>Extract scaffolds connected by paired-end reads</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mmextract.html">mmextract</a></code> </p>
-          </td>
-          <td><p>Extracts a subset of scaffolds</p></td>
+          <td><p>Import data</p></td>
         </tr><tr>
           <!--  -->
           <td>
@@ -135,27 +131,47 @@
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmgenome.html">mmgenome</a></code> </p>
+            <p><code><a href="mmsubset.html">mmsubset</a></code> </p>
           </td>
-          <td><p>mmgenome: multi-metagenome</p></td>
+          <td><p>Subset scaffolds</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmimport.html">mmimport</a></code> </p>
+            <p><code><a href="mmadd.html">mmadd</a></code> </p>
           </td>
-          <td><p>Import data</p></td>
+          <td><p>Add data to any mmgenome object</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmload.html">mmload</a></code> </p>
+            <p><code><a href="mmexport.html">mmexport</a></code> </p>
           </td>
-          <td><p>Data loading function</p></td>
+          <td><p>Exports scaffolds in fasta format</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmplot_locator.html">mmplot_locator</a></code> </p>
+            <p><code><a href="mmref.html">mmref</a></code> </p>
           </td>
-          <td><p>Interactively define a selection subspace on mmplot or mmplot_network</p></td>
+          <td><p>Compare essential genes in a bin to a group of references</p></td>
+        </tr><tr>
+          <!--  -->
+          <td>
+            <p><code><a href="mmstats.html">mmstats</a></code> </p>
+          </td>
+          <td><p>Calculates summary statistics on a set of scaffolds</p></td>
+        </tr>
+      </tbody><tbody>
+        <tr>
+          <th colspan="2">
+            <h2 id="section-metagenome-plotting-and-extraction" class="hasAnchor"><a href="#section-metagenome-plotting-and-extraction" class="anchor"></a>Metagenome plotting and extraction</h2>
+            <p class="section-desc"><p>Functions for plotting and extracting scaffolds</p></p>
+          </th>
+        </tr>
+        <tr>
+          <!--  -->
+          <td>
+            <p><code><a href="mmplot.html">mmplot</a></code> </p>
+          </td>
+          <td><p>Function to visualise metagenomes</p></td>
         </tr><tr>
           <!--  -->
           <td>
@@ -171,33 +187,35 @@
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmplot.html">mmplot</a></code> </p>
+            <p><code><a href="mmplot_locator.html">mmplot_locator</a></code> </p>
           </td>
-          <td><p>Function to visualise metagenomes</p></td>
+          <td><p>Interactively define a selection subspace on mmplot or mmplot_network</p></td>
         </tr><tr>
           <!--  -->
           <td>
             <p><code><a href="mmplot_selection.html">mmplot_selection</a></code> </p>
           </td>
           <td><p>Highlight subsets</p></td>
+        </tr>
+      </tbody><tbody>
+        <tr>
+          <th colspan="2">
+            <h2 id="section-extracting-subsetting" class="hasAnchor"><a href="#section-extracting-subsetting" class="anchor"></a>Extracting/subsetting</h2>
+            <p class="section-desc"><p>Extracting</p></p>
+          </th>
+        </tr>
+        <tr>
+          <!--  -->
+          <td>
+            <p><code><a href="mmextract.html">mmextract</a></code> </p>
+          </td>
+          <td><p>Extracts a subset of scaffolds</p></td>
         </tr><tr>
           <!--  -->
           <td>
-            <p><code><a href="mmref.html">mmref</a></code> </p>
+            <p><code><a href="mmextract_network.html">mmextract_network</a></code> </p>
           </td>
-          <td><p>Compare essential genes in a bin to a group of references</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mmstats.html">mmstats</a></code> </p>
-          </td>
-          <td><p>Calculates summary statistics on a set of scaffolds</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="mmsubset.html">mmsubset</a></code> </p>
-          </td>
-          <td><p>Subset scaffolds</p></td>
+          <td><p>Extract scaffolds connected by paired-end reads</p></td>
         </tr>
       </tbody>
       </table>
@@ -207,14 +225,16 @@
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#section-data-and-filtering">Data and filtering</a></li>
+      <li><a href="#section-metagenome-plotting-and-extraction">Metagenome plotting and extraction</a></li>
+      <li><a href="#section-extracting-subsetting">Extracting/subsetting</a></li>
     </ul>
   </div>
 </div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mads Albertsen, Kasper Skytte Andersen.</p>
+  <p>Developed by Mads Albertsen, Kasper Skytte Andersen, Rasmus Hansen Kirkegaard, Søren Mikael Karst.</p>
 </div>
 
 <div class="pkgdown">

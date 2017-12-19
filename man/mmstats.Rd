@@ -21,10 +21,9 @@ Calculates summary statistics on a set of scaffolds. Can be used on any object l
 }
 \examples{
 
-\dontrun{
 data(rocco)
 mmstats(data = d, ncov = 4)
-}
+
 }
 \author{
 Soren M. Karst \email{smk@bio.aau.dk}

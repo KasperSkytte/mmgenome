@@ -21,11 +21,10 @@ Interactively define a selection subspace on \code{mmplot} and \code{mmplot_netw
 }
 \examples{
 
-\dontrun{
 data(rocco)
 
 p <- mmplot(data = d, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "pps_phylum", minlength = 5000)
-sel <- mmplot_locator(p, trans=c("log10", "log10"))
+#sel <- mmplot_locator(p, trans=c("log10", "log10"))
 sel <- data.frame(C13.12.03  =  c(1.39, 2.07, 16.8, 19.4, 7.72, 1.76),
                   C14.01.09  =  c(29.4, 67.6, 85.9, 43.6, 16.7, 14.9))
 mmplot_selection(p, sel)
@@ -33,10 +32,10 @@ mmplot_selection(p, sel)
 dA <- mmextract(d, sel)
 
 pn <- mmplot_network(data = dA, network = pe, color = "essential", nconnections = 10)
-sel <- mmplot_locator(pn)
+#sel <- mmplot_locator(pn)
 sel <- c("3951", "6944")
 mmplot_network(data = dA, network = pe, color = "essential", nconnections = 10, highlight= sel)
-}
+
 }
 \author{
 Soren M. Karst \email{sorenkarst@gmail.com}

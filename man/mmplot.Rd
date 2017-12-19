@@ -57,10 +57,10 @@ Versitile plotting function to visualise metagnome assemblies loaded through \co
 }
 \examples{
 
-\dontrun{
+
 data(rocco)
 mmplot(data = d, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "essential", minlength = 10000)
-}
+
 }
 \author{
 Soren M. Karst \email{smk@bio.aau.dk}

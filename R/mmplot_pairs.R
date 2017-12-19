@@ -23,12 +23,11 @@
 #' @author Mads Albertsen \email{MadsAlbertsen85@@gmail.com}
 #' 
 #' @examples
-#' \dontrun{
 #' data(rocco)
 #' 
 #' mmplot_pairs(data = d, variables = c("C13.12.03", "C14.01.09", "C13.11.25", "gc", "PC2"), color = "essential", log = c("C13.12.03", "C14.01.09", "C13.11.25"), minlength = 10000)
 #' 
-#' }
+#' 
 
 mmplot_pairs <- function(data, variables, color = "gc", log.color = F, log = NULL, minlength = NULL, resize = 1, textsize = 8 , point.size = NULL, highlight = NULL, highlight.color = "darkred"){  
   

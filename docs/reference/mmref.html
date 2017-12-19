@@ -52,18 +52,26 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../index.html">Home</a>
 </li>
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../articles/mmgenome.html">Get started</a>
+</li>
+<li>
+  <a href="../reference/index.html">Functions</a>
+</li>
+<li>
+  <a href="../articles/assembly.html">Assembly guides</a>
 </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a>
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -128,19 +136,13 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-</div><span class='co'># NOT RUN {</span>
-<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"Proteobacteria"</span>, <span class='st'>"Actinobacteria"</span>))
-
+<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"Proteobacteria"</span>, <span class='st'>"Actinobacteria"</span>))</div><div class='img'><img src='mmref-6.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
 <span class='no'>res</span> <span class='kw'>&lt;-</span> <span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='fu'>c</span>(<span class='st'>"Proteobacteria"</span>, <span class='st'>"Actinobacteria"</span>), <span class='kw'>output</span> <span class='kw'>=</span> <span class='st'>"complete"</span>)
-<span class='no'>res</span>$<span class='no'>table</span>
-
-<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"all"</span>)
-<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Proteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Class"</span>)
-<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Proteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Class"</span>, <span class='kw'>summarise</span> <span class='kw'>=</span> <span class='st'>"median"</span>)
-<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Class"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Betaproteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Strain"</span>, <span class='kw'>summarise</span> <span class='kw'>=</span> <span class='st'>"median"</span>)
-
-<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Proteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Class"</span>, <span class='kw'>summarise</span> <span class='kw'>=</span> <span class='st'>"median"</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>dA</span>)
-<span class='co'># }</span></pre>
+<span class='no'>res</span>$<span class='no'>table</span></div><div class='output co'>#&gt;           Phylum Genomes Total.HMM Unique.HMM
+#&gt; 1 Actinobacteria     154     107.5        105
+#&gt; 2 Proteobacteria     505     107.0        105</div><div class='input'>
+<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"all"</span>)</div><div class='img'><img src='mmref-7.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Proteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Class"</span>)</div><div class='img'><img src='mmref-8.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Proteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Class"</span>, <span class='kw'>summarise</span> <span class='kw'>=</span> <span class='st'>"median"</span>)</div><div class='img'><img src='mmref-9.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Class"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Betaproteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Strain"</span>, <span class='kw'>summarise</span> <span class='kw'>=</span> <span class='st'>"median"</span>)</div><div class='img'><img src='mmref-10.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+<span class='fu'>mmref</span>(<span class='kw'>tax.level</span> <span class='kw'>=</span> <span class='st'>"Phylum"</span>, <span class='kw'>tax.compare</span> <span class='kw'>=</span> <span class='st'>"Proteobacteria"</span>, <span class='kw'>tax.aggregate</span> <span class='kw'>=</span> <span class='st'>"Class"</span>, <span class='kw'>summarise</span> <span class='kw'>=</span> <span class='st'>"median"</span>, <span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>dA</span>)</div><div class='output co'>#&gt; <span class='error'>Error in mmref(tax.level = "Phylum", tax.compare = "Proteobacteria", tax.aggregate = "Class",     summarise = "median", data = dA): object 'dA' not found</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -163,7 +165,7 @@ Mads Albertsen <a href='mailto:MadsAlbertsen85@gmail.com'>MadsAlbertsen85@gmail.
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mads Albertsen, Kasper Skytte Andersen.</p>
+  <p>Developed by Mads Albertsen, Kasper Skytte Andersen, Rasmus Hansen Kirkegaard, Søren Mikael Karst.</p>
 </div>
 
 <div class="pkgdown">

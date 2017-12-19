@@ -8,3 +8,45 @@ home:
 template:
   params:
     bootswatch: yeti
+
+reference:
+  - title: Data and filtering
+    desc: Functions for loading, exporting and subsetting the data.
+    contents:
+    - mmload
+    - mmimport
+    - mmformat_esom
+    - mmformat_ppsp
+    - mmsubset
+    - mmadd
+    - mmexport
+    - mmref
+    - mmstats
+  - title: Metagenome plotting and extraction
+    desc: Functions for plotting and extracting scaffolds
+    contents: 
+    - mmplot
+    - mmplot_network
+    - mmplot_pairs
+    - mmplot_locator
+    - mmplot_selection
+  - title: Extracting/subsetting
+    desc: Extracting
+    contents: 
+    - mmextract
+    - mmextract_network
+    
+navbar:
+  title: "mmgenome"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Get started"
+      href: articles/mmgenome.html
+    - text: "Functions"
+      href: reference/index.html
+    - text: "Assembly guides"
+      href: articles/assembly.html
+  right:
+  - icon: fa-github fa-lg
+href: https://github.com/MadsAlbertsen/mmgenome

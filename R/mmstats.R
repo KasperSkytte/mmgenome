@@ -16,10 +16,9 @@
 #' 
 #' @examples
 #' 
-#' \dontrun{
 #' data(rocco)
 #' mmstats(data = d, ncov = 4)
-#' }
+#' 
 
 mmstats <- function(data, ncov=2,data_compare=NULL) {
   options(scipen=8)

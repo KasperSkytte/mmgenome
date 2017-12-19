@@ -3,9 +3,10 @@ Type: Package
 Title: Tools for extracting individual genomes from metagenomes
 Description: mmgenome: a toolbox for extracting individual genomes from
     metagenomes.
-Version: 0.7.1
-Date: 2017-03-15
-Authors@R: c(person("Mads", "Albertsen", role = c("aut", "cre"), email = "MadsAlbertsen85@gmail.com"), person(c("Kasper", "Skytte"), "Andersen", role = c("aut"), email = "ksa@bio.aau.dk"), person(c("Rasmus", "Hansen"), "Kirkegaard", role = c("ctb"), email = "rhk@bio.aau.dk"))
+Version: 1.0
+Date: 2017-12-15
+Encoding: UTF-8
+Authors@R: c(person("Mads", "Albertsen", role = c("aut", "cre"), email = "MadsAlbertsen85@gmail.com"), person(c("Kasper", "Skytte"), "Andersen", role = c("aut"), email = "ksa@bio.aau.dk"), person(c("Rasmus", "Hansen"), "Kirkegaard", role = c("aut"), email = "rhk@bio.aau.dk"), person(c("Søren", "Mikael"), "Karst", role = c("aut"), email = "smk@bio.aau.dk"))
 Maintainer: Mads Albertsen <MadsAlbertsen85@gmail.com>
 Reference: Albertsen, M., Hugenholtz, P., Skarshewski, A., Nielsen, K. L.,
     Tyson, G. W., & Nielsen, P. H. (2013). Genome sequences of rare, uncultured
@@ -13,7 +14,8 @@ Reference: Albertsen, M., Hugenholtz, P., Skarshewski, A., Nielsen, K. L.,
     Nature biotechnology, 31(6), 533-8. doi:10.1038/nbt.2579
 License: AGPL-3
 Depends:
-    R (>= 3.1.0),
+    R (>= 3.4.3)
+Imports:
     sp (>= 1.0-15),
     gridExtra (>= 0.9.1),
     ggplot2 (>= 1.0.0),
@@ -24,5 +26,5 @@ Depends:
     reshape2 (>= 1.4),
     dplyr (>= 0.4.0) ,
     Rtsne.multicore (>= 0.0.99)
-Remotes: RGLab/Rtsne.multicore
+Remotes: github::RGLab/Rtsne.multicore
 RoxygenNote: 6.0.1

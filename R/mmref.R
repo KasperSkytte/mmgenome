@@ -25,7 +25,6 @@
 #' 
 #' @examples
 #' 
-#' \dontrun{
 #' mmref(tax.level = "Phylum", tax.compare = c("Proteobacteria", "Actinobacteria")) 
 #' 
 #' res <- mmref(tax.level = "Phylum", tax.compare = c("Proteobacteria", "Actinobacteria"), output = "complete") 
@@ -36,7 +35,7 @@
 #' mmref(tax.level = "Phylum", tax.compare = "Proteobacteria", tax.aggregate = "Class", summarise = "median") 
 #' mmref(tax.level = "Class", tax.compare = "Betaproteobacteria", tax.aggregate = "Strain", summarise = "median")
 #' 
-#' mmref(tax.level = "Phylum", tax.compare = "Proteobacteria", tax.aggregate = "Class", summarise = "median", data = dA)}
+#' mmref(tax.level = "Phylum", tax.compare = "Proteobacteria", tax.aggregate = "Class", summarise = "median", data = dA)
 
 mmref <- function(data = NULL, tax.level="Phylum", tax.compare, tax.aggregate = tax.level, summarise = "mean", output = "plot", plot.display = T, plot.sort = T){
   

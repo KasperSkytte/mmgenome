@@ -52,18 +52,26 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../index.html">Home</a>
 </li>
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../articles/mmgenome.html">Get started</a>
+</li>
+<li>
+  <a href="../reference/index.html">Functions</a>
+</li>
+<li>
+  <a href="../articles/assembly.html">Assembly guides</a>
 </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a>
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -104,16 +112,14 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-</div><span class='co'># NOT RUN {</span>
 <span class='fu'>data</span>(<span class='no'>rocco</span>)
 
 <span class='no'>p</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='mmplot.html'>mmplot</a></span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>d</span>, <span class='kw'>x</span> <span class='kw'>=</span> <span class='st'>"C13.12.03"</span>, <span class='kw'>y</span> <span class='kw'>=</span> <span class='st'>"C14.01.09"</span>, <span class='kw'>log.x</span> <span class='kw'>=</span> <span class='no'>T</span>, <span class='kw'>log.y</span> <span class='kw'>=</span> <span class='no'>T</span>, <span class='kw'>color</span> <span class='kw'>=</span> <span class='st'>"essential"</span>, <span class='kw'>minlength</span> <span class='kw'>=</span> <span class='fl'>3000</span>)
-<span class='no'>p</span>
-<span class='no'>sel</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='mmplot_locator.html'>mmplot_locator</a></span>(<span class='no'>p</span>)
+<span class='no'>p</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Transformation introduced infinite values in continuous x-axis</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Transformation introduced infinite values in continuous y-axis</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Transformation introduced infinite values in continuous x-axis</span></div><div class='output co'>#&gt; <span class='warning'>Warning: Transformation introduced infinite values in continuous y-axis</span></div><div class='img'><img src='mmplot_selection-5.png' alt='' width='700' height='432.632880098887' /></div><div class='input'><span class='co'>#sel &lt;- mmplot_locator(p)</span>
 <span class='no'>sel</span> <span class='kw'>&lt;-</span> <span class='fu'>data.frame</span>(<span class='kw'>C13.12.03</span>  <span class='kw'>=</span>  <span class='fu'>c</span>(<span class='fl'>1.39</span>, <span class='fl'>2.07</span>, <span class='fl'>16.8</span>, <span class='fl'>19.4</span>, <span class='fl'>7.72</span>, <span class='fl'>1.76</span>),
                   <span class='kw'>C14.01.09</span>  <span class='kw'>=</span>  <span class='fu'>c</span>(<span class='fl'>29.4</span>, <span class='fl'>67.6</span>, <span class='fl'>85.9</span>, <span class='fl'>43.6</span>, <span class='fl'>16.7</span>, <span class='fl'>14.9</span>))
-<span class='fu'>mmplot_selection</span>(<span class='no'>p</span>, <span class='no'>sel</span>)
-<span class='co'># }</span></pre>
+<span class='fu'>mmplot_selection</span>(<span class='no'>p</span>, <span class='no'>sel</span>)</div><div class='output co'>#&gt; <span class='error'>Error in FUN(X[[i]], ...): object 'sel' not found</span></div><div class='img'><img src='mmplot_selection-6.png' alt='' width='700' height='432.632880098887' /></div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -136,7 +142,7 @@ Mads Albertsen <a href='mailto:MadsAlbertsen85@gmail.com'>MadsAlbertsen85@gmail.
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mads Albertsen, Kasper Skytte Andersen.</p>
+  <p>Developed by Mads Albertsen, Kasper Skytte Andersen, Rasmus Hansen Kirkegaard, Søren Mikael Karst.</p>
 </div>
 
 <div class="pkgdown">

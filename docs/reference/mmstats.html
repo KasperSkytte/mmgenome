@@ -52,18 +52,26 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
-     
-  </a>
+  <a href="../index.html">Home</a>
 </li>
 <li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../articles/mmgenome.html">Get started</a>
+</li>
+<li>
+  <a href="../reference/index.html">Functions</a>
+</li>
+<li>
+  <a href="../articles/assembly.html">Assembly guides</a>
 </li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a>
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -108,10 +116,21 @@
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-</div><span class='co'># NOT RUN {</span>
 <span class='fu'>data</span>(<span class='no'>rocco</span>)
-<span class='fu'>mmstats</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>d</span>, <span class='kw'>ncov</span> <span class='kw'>=</span> <span class='fl'>4</span>)
-<span class='co'># }</span></pre>
+<span class='fu'>mmstats</span>(<span class='kw'>data</span> <span class='kw'>=</span> <span class='no'>d</span>, <span class='kw'>ncov</span> <span class='kw'>=</span> <span class='fl'>4</span>)</div><div class='output co'>#&gt;                    General Stats
+#&gt; n.scaffolds             97285.00
+#&gt; GC.mean                    52.20
+#&gt; N50                      5291.00
+#&gt; Length.total        331908376.00
+#&gt; Length.max            1446979.00
+#&gt; Length.mean              3411.70
+#&gt; Coverage.C13.11.14          2.62
+#&gt; Coverage.C13.11.25         16.06
+#&gt; Coverage.C13.12.03          2.91
+#&gt; Coverage.C14.01.09         11.58
+#&gt; Ess.total                7138.00
+#&gt; Ess.unique                109.00</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -134,7 +153,7 @@ Mads Albertsen <a href='mailto:MadsAlbertsen85@gmail.com'>MadsAlbertsen85@gmail.
 
       <footer>
       <div class="copyright">
-  <p>Developed by Mads Albertsen, Kasper Skytte Andersen.</p>
+  <p>Developed by Mads Albertsen, Kasper Skytte Andersen, Rasmus Hansen Kirkegaard, Søren Mikael Karst.</p>
 </div>
 
 <div class="pkgdown">

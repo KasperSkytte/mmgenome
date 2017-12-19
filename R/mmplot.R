@@ -35,10 +35,10 @@
 #' 
 #' @examples
 #' 
-#' \dontrun{
+#' 
 #' data(rocco)
 #' mmplot(data = d, x = "C13.12.03", y = "C14.01.09", log.x = T, log.y = T, color = "essential", minlength = 10000)
-#' }
+#' 
 
 mmplot <- function(data, x, y, log.x=F, log.y=F, color = "essential", minlength = NULL, network = NULL, nconnections = 0, duplicates = F, labels = F, log.color = F,  resize = 1, point.size = NULL, highlight = NULL, highlight.color = "darkred", alpha = NULL, esom.map = NULL, esom.cut = 0.15, esom.color = "darkred", factor.shape = "outline"){
   
