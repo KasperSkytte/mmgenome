@@ -16,15 +16,16 @@ License: AGPL-3
 Depends:
     R (>= 3.4.3)
 Imports:
-    sp (>= 1.0-15),
-    gridExtra (>= 0.9.1),
-    ggplot2 (>= 1.0.0),
-    knitr (>= 1.6),
-    vegan (>= 2.0-10),
-    Biostrings (>= 2.32.0),
-    igraph (>= 1.0.0),
-    reshape2 (>= 1.4),
-    dplyr (>= 0.4.0) ,
+    sp,
+    gridExtra,
+    ggplot2,
+    knitr,
+    grid,
+    vegan,
+    Biostrings,
+    igraph,
+    reshape2,
+    dplyr,
     Rtsne.multicore (>= 0.0.99)
 Remotes: github::RGLab/Rtsne.multicore
 RoxygenNote: 6.0.1

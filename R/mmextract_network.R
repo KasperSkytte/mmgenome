@@ -13,6 +13,7 @@
 #' @return A dataframe with scaffold information.
 #' 
 #' @export
+#' @import igraph
 #' @author Soren M. Karst \email{smk@@bio.aau.dk}
 #' @author Mads Albertsen \email{MadsAlbertsen85@@gmail.com}
 #' 

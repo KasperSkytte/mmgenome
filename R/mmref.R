@@ -19,7 +19,6 @@
 #' @import Biostrings
 #' @import reshape2
 #' @import ggplot2
-#' @import plyr
 #' @author Soren M. Karst \email{smk@@bio.aau.dk}
 #' @author Mads Albertsen \email{MadsAlbertsen85@@gmail.com}
 #' 
